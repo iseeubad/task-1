@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+body {
+    min-height: 100vh;
+    background: url('images/pexels-veeterzy-303383.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header {
+    background-color: transparent; 
+    position: fixed;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo img {
+    max-width: 5%;
+    height: auto;
+    position: absolute;
+    top: 10px; 
+    left: 20px; 
+}
+.navbar a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 5px 15px;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    transition: .3s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+
+
+.main-container {
+    text-align: center;
+    z-index: 100;
+    background-color: transparent;
+}
+
+.sentence {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 8%;
+}
+
+.signup-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.signup-button:hover {
+    background-color: #2077b0;
+    padding: 12px 24px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+
+.footer {
+    padding: 20px;
+    background-color:rgba(128, 128, 128, 0.7);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}  
+.footer-text {
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+}
+  
+.footer-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+}
+  
+.footer-links li {
+    margin-left: 20px;
+}
+  
+.footer-links li a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+  
+.footer-links li a:hover {
+    color: #013220;
+}
+  
